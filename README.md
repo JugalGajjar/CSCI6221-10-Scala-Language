@@ -25,9 +25,25 @@ This project demonstrates the development of an end-to-end big data processing p
 - **Telecommunications**: Optimize network usage by analyzing traffic patterns.
 - **Internet of Things (IoT)**: Analyze large amounts of sensor data from connected devices.
 
+## Project Demo Video
+- https://drive.google.com/file/d/1Gf3NFdqovI7JXxbWT83lpXTO0nAxS3j4/view
+
+## Steps To Use
+- Install Java
+- Install MySQL
+- Setup Scala, Spark, Hadoop, and Grafana
+- Clone this repository
+- Create a MySQL database of name "YoutubeStatsDb"
+- Open YouTubeAnalysis.scala in an IDE (such as IntelliJ)
+- Add your own YouTube API Key in the key placeholder
+- Update the absolute paths to the files
+- Add your own MySQL username and password for the database connectivity
+- Make Grafana to connect with your MySQL database and add relevant queries for the visualizations
+- Execute YouTubeAnalysis.scala
+
 ## Contributors
 - Jugal Gajjar
-- Saptorshee Nag
 - Kaustik Ranaware
-- Saurabh S. R.
 - Michael Womack
+- Saurabh S. R.
+- Saptorshee Nag
