@@ -29,17 +29,15 @@ This project demonstrates the development of an end-to-end big data processing p
 - https://drive.google.com/file/d/1Gf3NFdqovI7JXxbWT83lpXTO0nAxS3j4/view
 
 ## Steps To Use
-- Install Java
-- Install MySQL
-- Setup Scala, Spark, Hadoop, and Grafana
-- Clone this repository
-- Create a MySQL database of name "YoutubeStatsDb"
-- Open YouTubeAnalysis.scala in an IDE (such as IntelliJ)
-- Add your own YouTube API Key in the key placeholder
-- Update the absolute paths to the files
-- Add your own MySQL username and password for the database connectivity
-- Make Grafana to connect with your MySQL database and add relevant queries for the visualizations
-- Execute YouTubeAnalysis.scala
+1. Install Java and MySQL
+2. Setup Scala, Spark, Hadoop, and Grafana
+3. Clone this repository
+4. Create a MySQL database of name "YoutubeStatsDb"
+5. Add your own YouTube API Key in the key placeholder
+6. Update the absolute paths to the files
+7. Add your own MySQL username and password for the database connectivity
+8. Make Grafana to connect with your MySQL database and add relevant queries for the visualizations
+9. Execute YouTubeAnalysis.scala
 
 ## Contributors
 - Jugal Gajjar
