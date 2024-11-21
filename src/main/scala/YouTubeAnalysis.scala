@@ -120,15 +120,15 @@ object YouTubeVideoFetcher2 {
   // Main function to run the task every 15 seconds
   def main(args: Array[String]): Unit = {
     val filePaths = Map(
-      "Music" -> "D:/GWU_World/Practice/Music_IDs.txt",
-      "Gaming" -> "D:/GWU_World/Practice/Gaming_IDs.txt",
-      "Technology" -> "D:/GWU_World/Practice/Technology_IDs.txt",
-      "Entertainment" -> "D:/GWU_World/Practice/Entertainment_IDs.txt",
-      "Sports" -> "D:/GWU_World/Practice/Sports_IDs.txt",
-      "News" -> "D:/GWU_World/Practice/News_IDs.txt"
+      "Music" -> "ABSOLUTE_PATH_TO/Music_IDs.txt",
+      "Gaming" -> "ABSOLUTE_PATH_TO/Gaming_IDs.txt",
+      "Technology" -> "ABSOLUTE_PATH_TO/Technology_IDs.txt",
+      "Entertainment" -> "ABSOLUTE_PATH_TO/Entertainment_IDs.txt",
+      "Sports" -> "ABSOLUTE_PATH_TO/Sports_IDs.txt",
+      "News" -> "ABSOLUTE_PATH_TO/News_IDs.txt"
     )
 
-    val fileName = "YouTubeData3.csv"
+    val fileName = "YouTubeData.csv"
     val file = new File(fileName)
 
     // Run the task periodically every 15 seconds using do-while loop
@@ -175,9 +175,9 @@ object YouTubeVideoFetcher2 {
         .getOrCreate()
 
       // Path to the input CSV file
-      val inputPath = "D:/GWU_World/Practice/YouTubeData.csv"
+      val inputPath = "ABSOLUTE_PATH_TO/YouTubeData.csv"
 
-      val outputPath = "D:/GWU_World/Practice/YouTubeAnalysis.csv"
+      val outputPath = "ABSOLUTE_PATH_TO/YouTubeAnalysis.csv"
       val writer1 = new PrintWriter(new File(outputPath))
       println(s"Writer1 initialized for file: $outputPath")
 
@@ -252,7 +252,7 @@ object YouTubeVideoFetcher2 {
         .master("local[*]")
         .getOrCreate()
 
-      val csvFilePath = "D:/GWU_World/Practice/YouTubeAnalysis.csv"
+      val csvFilePath = "ABSOLUTE_PATH_TO/YouTubeAnalysis.csv"
 
       val df = spark1.read
         .option("header", "true")
@@ -267,7 +267,7 @@ object YouTubeVideoFetcher2 {
 
       val jdbcUrl = "jdbc:mysql://localhost:3306/YoutubeStatsDb"
       val connectionProperties = new java.util.Properties()
-      connectionProperties.setProperty("user", "root")
+      connectionProperties.setProperty("user", "YOUR_MYSQL_USERNAME")
       connectionProperties.setProperty("password", "YOUR_MYSQL_PASSWORD")
       connectionProperties.setProperty("driver", "com.mysql.cj.jdbc.Driver")
 
