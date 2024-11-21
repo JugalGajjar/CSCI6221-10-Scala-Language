@@ -19,7 +19,7 @@ case class VideoDetails2(
 object YouTubeVideoFetcher2 {
 
   // Replace with your YouTube API key
-  val apiKey: String = "AIzaSyAUjKQEzzoZBOqRSi7tLIugfxyIh9ybIZk"
+  val apiKey: String = "YOUR_YOUTUBE_API_KEY"
 
   // Function to fetch video details by video ID (one by one)
   def fetchVideoDetails2(videoId: String): Option[VideoDetails2] = {
