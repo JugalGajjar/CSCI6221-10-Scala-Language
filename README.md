@@ -13,10 +13,10 @@ This project demonstrates the development of an end-to-end big data processing p
 
 ## Technologies Used
 - **Scala**: The core programming language used for building and managing the pipeline.
-- **Apache Kafka**: For managing the stream of data ingested into the pipeline.
 - **Apache Spark**: To process and analyze large datasets in a distributed environment.
 - **Hadoop Distributed File System (HDFS)**: A scalable and reliable storage system for managing large-scale data.
 - **Spark SQL/DataFrames**: For querying and manipulating structured data in a flexible way.
+- **Grafana**: For creating interactive dashboards.
 
 ## Use Cases
 - **E-Commerce**: Track customer behavior and make personalized recommendations in real-time.
